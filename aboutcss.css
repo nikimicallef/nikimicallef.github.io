@@ -1,0 +1,290 @@
+@font-face { 
+    font-family: Colors-Of-Autumn; 
+    src: url('fonts/Colors-Of-Autumn.ttf') format('opentype');
+}
+
+@font-face { 
+    font-family: Circo; 
+    src: url('fonts/Circo.ttf') format('opentype');
+}
+
+html, body {
+    margin:-8px 0 0 0;
+    padding:0;
+    height:100%;
+}
+
+body {
+    background-color:#F0F0F0;
+}
+
+.header {
+    background-color: #283F51;
+    height:176px;
+    width:100%;
+    min-width: 1229px;
+    margin: 0 0 0 0;
+    border-style:none;
+}
+
+.header .container {
+    margin-left:auto;
+    margin-right:auto;
+    width:1214px;
+    position:relative;
+    padding-top:50px;
+    padding-left:15px;
+}
+
+.header .container #logo {
+    display:inline-block;
+    border-radius:4px;
+}
+
+.header .container #logo #niki {
+    display:block;
+    color:white;
+    font-family: Lato, Arial, sans-serif;
+    font-size:48px;
+    letter-spacing: .5px;
+    margin:0 0 -15px 0;
+    padding:0;
+    border:0;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-decoration:none;
+}
+
+.header .container #logo #micallef {
+    display:inline-block;
+    color:white;
+    font-family: Lato, Arial, sans-serif;
+    font-size:48px;
+    letter-spacing: .5px;
+    margin:0 -10px 0 0;
+    padding:0;
+    border:0;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-decoration:none;
+}
+
+.header .container #logo #com {
+    display:inline-block;
+    color:white;    
+    font-family: Lato, Arial, sans-serif;
+    font-size:18px;
+    color:white;
+    letter-spacing: .5px;
+    margin:0;
+    padding:0;
+    border:0;
+    font-weight: 100;
+    text-decoration:none;
+}
+
+.header .container #logo #tag {
+    display:block;
+    font-family: Colors-Of-Autumn, Arial, sans-serif;
+    font-size:13.5px;
+    color:#a1d3b0;
+    letter-spacing: .5px;
+    margin:0;
+    padding-left:6px;
+    border:0;
+    font-weight: 100;
+    text-decoration:none;
+}
+
+.header .container #menu {
+    display: inline;
+    float:right;
+    text-transform: uppercase;
+    padding:0;
+    margin-top:70px;
+}
+
+.header .container #menu ul {
+    display: inline;
+}
+
+.header .container #menu ul li {
+    display: inline;
+}
+
+.header .container #menu ul li a {
+    color:white;
+    font-family: Lato, Arial, sans-serif;
+    font-size:15px;
+    letter-spacing: .5px;
+    margin:0 0px 0 0;
+    padding:0;
+    border:0;
+    font-weight: 200;
+    text-transform: uppercase;
+    text-decoration:none;
+    padding: 10px 15px 10px 15px;
+}
+
+.header .container #menu ul li a:hover{
+    border-radius:4px;
+    background-color:white;
+    color:#283F51;
+}
+
+.subheader {
+    height:100px;
+    min-width: 1229px;
+    background-color:#a1d3b0;
+}
+
+.subheader h2 {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color:#648880;
+    font-family: Lato, Arial, sans-serif;
+    font-size:36px;
+    letter-spacing: .5px;
+    margin:0 0px 0 0;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration:none;
+}
+
+.middle {
+    display:block;
+    margin:0 auto 0 auto;
+    width:1214px;
+    overflow:auto;
+    padding-left:15px;
+    padding-bottom:13px;
+    min-height: 65%;
+    /* height:auto; */
+    background-color:white;
+}
+
+.middle .main-text {
+    width:750px;
+    float:left;
+    margin: 15px 0 0 20px;
+    font-family:Lato, Arial, sans-serif;
+    font-size:16px;
+    color:#424242;
+}
+
+.middle .main-text p {
+    font-family:Lato, Arial, sans-serif;
+    text-align:justify;
+    font-size:16px;
+    color:#424242;
+}
+
+.middle .aside {
+    /* height:100%; */
+    width:350px;
+    float:right;
+    padding-top:35px;
+    padding-right:30px;
+    margin-bottom: 40px;
+}
+
+.middle .aside #self-pic {
+    height:250px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius: 50%;
+}
+
+.middle .aside .container {
+    margin-top:-125px;
+    margin-left:auto;
+    margin-right:auto;
+    /*width:274px;*/
+    border:1px solid #dfe2e5;
+    border-radius: 5px;
+    padding:135px 45px 0 45px;
+}
+
+.middle .aside .container #about {
+    font-family:Lato, Arial, sans-serif;
+    color: #888;
+    font-size:17px;
+    text-align:justify;
+}
+
+.middle .aside .container #soc-media {
+    text-align:justify;
+    padding:5px 15px 0 15px;
+}
+
+.middle .aside .container #soc-media:after {
+    content:'';
+    display: inline-block;
+    width: 100%;
+}
+
+.middle .aside .container #soc-media #github-link {
+    display:inline-block;
+}
+
+.middle .aside .container #soc-media #github-link #github-pic {
+    display:inline-block;
+    width:47px;
+    height:47px;
+}
+
+.middle .aside .container #soc-media #linkedin-link {
+    display:inline-block;
+}
+
+.middle .aside .container #soc-media #linkedin-link #linkedin-pic {
+    display:inline-block;
+    width:48px;
+    height:48px;
+}
+
+.middle .aside .container #soc-media #mail-link {
+    display:inline-block;
+}
+
+.middle .aside .container #soc-media #mail-link #mail-pic {
+    display:inline-block;
+    width:48px;
+    height:48px;
+}
+
+.footer {
+    display:block;
+    background-color: #283F51;
+    height:50px;
+    width:100%;
+    margin:0;
+    clear:both;
+    position: relative; 
+}
+
+.footer #container {
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+    height:100%;
+}
+
+.footer #container #footer-text {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color:white;
+    font-family: Lato, Arial, sans-serif;
+    font-size:9px;
+    letter-spacing: .5px;
+    margin:0 0px 0 0;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration:none;
+}
+
