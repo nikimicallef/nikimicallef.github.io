@@ -1,11 +1,11 @@
 @font-face { 
     font-family: Colors-Of-Autumn; 
-    src: url('fonts/Colors-Of-Autumn.ttf') format('opentype');
+    src: url('OldVersion/fonts/Colors-Of-Autumn.ttf') format('opentype');
 }
 
 @font-face { 
     font-family: Circo; 
-    src: url('fonts/Circo.ttf') format('opentype');
+    src: url('OldVersion/fonts/Circo.ttf') format('opentype');
 }
 
 html, body {
@@ -166,31 +166,115 @@ body {
 .middle .main-text {
     width:750px;
     float:left;
-    margin: 15px 0 0 20px;
+    margin: 30px 0 0 20px;
     font-family:Lato, Arial, sans-serif;
+    //font-size:16px;
+    color:#424242;
+    
+}
+
+.middle .main-text table {
+   //border: 1px solid black;
+   border-collapse: collapse;
+   width:100%;
+}
+
+.middle .main-text th {
+   //border: 1px solid black;
+}
+
+.middle .main-text td {
+   //border: 1px solid black;
+    vertical-align: top;
+}
+
+.middle .main-text table tr td .date {
+    float:right;
+    
+}
+
+.middle .main-text table tr td hr {
+    color:#DCDCDC;
+    opacity:.3;
+    margin:50px 20px 0 20px;
+}
+
+.middle .main-text table tr .left {
+    //padding-right:20px;
+    width:220px;
+}
+
+.middle .main-text table .division {
+    height:100px;
+}
+
+.middle .main-text table .empty {
+    height:50px;
+}
+
+.middle .main-text table tr td h3 {
+    margin:0;
+    padding-bottom:10px;
     font-size:16px;
-    color:#424242;
-    height:100%;
-
 }
 
-.middle .main-text h2 {
-    font-family:Lato, Arial, sans-serif;
-    font-size:22px;
-    color:#648880;
+.middle .main-text table tr td .proghead {
+    padding-bottom:5px;
 }
 
-.middle .main-text p {
-    font-family:Lato, Arial, sans-serif;
-    text-align:justify;
-    font-size:16px;
-    color:#424242;
-   
+.middle .main-text table tr td .title {
+    text-transform: uppercase;
+    font-size:18px;
+    color:black;
 }
 
-.middle .main-text p a {
-    color:#424242;
-    text-decoration:underline;
+.middle .main-text table tr td .title1 {
+    text-transform: uppercase;
+    font-size:18px;
+    color:black;
+    padding-bottom:5px;
+}
+
+.middle .main-text table tr td .notabene {
+    font-size:10px;
+}
+
+.middle .main-text table tr td h4 {
+    margin:0;
+    font-size:14px;
+    color:rgba(26,26,26,.6);
+    padding-bottom:5px;
+    font-weight:900;
+}
+
+.middle .main-text table tr td h5 {
+    margin:0;
+    text-align: justify;
+    font-size:12px;
+    color:rgba(26,26,26,.6);
+}
+
+.middle .main-text table tr td .progcont {
+    font-size:14px;
+}
+
+.middle .main-text table tr td .date {
+    font-size:12px;
+    vertical-align: bottom;
+}
+
+.middle .main-text table tr td ul{
+    margin:0;
+    padding-left:30px;
+    list-style-type: square;
+}
+
+.middle .main-text table tr td ul li{
+    color: #555;
+}
+
+.middle .main-text table tr td {
+    text-align: justify;
 }
 
 .middle .aside {

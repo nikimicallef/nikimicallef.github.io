@@ -1,17 +1,17 @@
 @font-face { 
     font-family: Colors-Of-Autumn; 
-    src: url('fonts/Colors-Of-Autumn.ttf') format('opentype');
+    src: url('OldVersion/fonts/Colors-Of-Autumn.ttf') format('opentype');
+}
+
+@font-face { 
+    font-family: Circo; 
+    src: url('OldVersion/fonts/Circo.ttf') format('opentype');
 }
 
 html, body {
     margin:-8px 0 0 0;
     padding:0;
     height:100%;
-}
-
-#menu{
-    display: block;
-    float: right;
 }
 
 body {
@@ -120,7 +120,7 @@ body {
     margin:0 0px 0 0;
     padding:0;
     border:0;
-    font-weight: 100;
+    font-weight: 200;
     text-transform: uppercase;
     text-decoration:none;
     padding: 10px 15px 10px 15px;
@@ -132,6 +132,27 @@ body {
     color:#283F51;
 }
 
+.subheader {
+    height:100px;
+    min-width: 1229px;
+    background-color:#a1d3b0;
+}
+
+.subheader h2 {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color:#648880;
+    font-family: Lato, Arial, sans-serif;
+    font-size:36px;
+    letter-spacing: .5px;
+    margin:0 0px 0 0;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration:none;
+}
+
 .middle {
     display:block;
     margin:0 auto 0 auto;
@@ -139,8 +160,6 @@ body {
     overflow:auto;
     padding-left:15px;
     padding-bottom:35px;
-    min-height: 75%;
-    /* height:auto; */
     background-color:white;
 }
 
@@ -151,24 +170,36 @@ body {
     font-family:Lato, Arial, sans-serif;
     font-size:16px;
     color:#424242;
-}
+    height:100%;
 
-.middle .main-text h2 {
-    font-family:Lato, Arial, sans-serif;
-    font-size:22px;
-    color:#648880;
 }
-
 
 .middle .main-text p {
     font-family:Lato, Arial, sans-serif;
     text-align:justify;
     font-size:16px;
-    color:#424242;;
+    color:#424242;
+   
 }
 
-.middle .main-text .bottom {
-    font-size:9px;
+.middle .main-text p a {
+    color:#424242;
+    text-decoration:underline;
+}
+
+.middle .main-text img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:500px;
+}
+
+.middle .main-text h6 {
+    text-align: center;
+    font-style:italic;
+    color: #999;
+    margin-top:10px;
+    
 }
 
 .middle .aside {

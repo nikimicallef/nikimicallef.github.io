@@ -1,11 +1,11 @@
 @font-face { 
     font-family: Colors-Of-Autumn; 
-    src: url('fonts/Colors-Of-Autumn.ttf') format('opentype');
+    src: url('OldVersion/fonts/Colors-Of-Autumn.ttf') format('opentype');
 }
 
 @font-face { 
     font-family: Circo; 
-    src: url('fonts/Circo.ttf') format('opentype');
+    src: url('OldVersion/fonts/Circo.ttf') format('opentype');
 }
 
 html, body {
@@ -157,49 +157,33 @@ body {
     display:block;
     margin:0 auto 0 auto;
     width:1214px;
-    overflow:auto;
+    overflow:hidden;
     padding-left:15px;
-    padding-bottom:35px;
+    /*padding-bottom:35px;*/
+    min-height: 68.3%;
+    /* height:auto; */
     background-color:white;
 }
 
 .middle .main-text {
     width:750px;
     float:left;
-    margin: 15px 0 0 20px;
+    margin: 15px 0 50px 20px;
     font-family:Lato, Arial, sans-serif;
     font-size:16px;
     color:#424242;
-    height:100%;
-
 }
 
 .middle .main-text p {
     font-family:Lato, Arial, sans-serif;
     text-align:justify;
     font-size:16px;
-    color:#424242;
-   
+    color:#424242;;
 }
 
 .middle .main-text p a {
     color:#424242;
     text-decoration:underline;
-}
-
-.middle .main-text img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width:500px;
-}
-
-.middle .main-text h6 {
-    text-align: center;
-    font-style:italic;
-    color: #999;
-    margin-top:10px;
-    
 }
 
 .middle .aside {
@@ -208,7 +192,7 @@ body {
     float:right;
     padding-top:35px;
     padding-right:30px;
-    margin-bottom:50px;
+    margin-bottom:40px;
 }
 
 .middle .aside #self-pic {
