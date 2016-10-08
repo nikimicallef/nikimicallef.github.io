@@ -1,0 +1,794 @@
+/*!
+ * Bootstrap v3.3.7 (http://getbootstrap.com)
+ * Copyright 2011-2016 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ *//*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+body, figure {
+    margin: 0
+}
+
+p,  pre {
+    margin: 0 0 10px
+}
+
+article, aside, details, figcaption, figure, footer, header, legend, main, menu, nav, section, summary,  pre {
+    display: block
+}
+
+caption, th {
+    text-align: left
+}
+
+table tr td .proghead, table tr td .title1, table tr td h4 {
+    padding-bottom: 5px
+}
+
+table tr td, table tr td h5 {
+    text-align: justify
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%
+}
+
+audio, canvas, progress, video {
+    display: inline-block;
+    vertical-align: baseline
+}
+
+template {
+    display: none
+}
+
+a:active, a:hover {
+    outline: 0
+}
+
+optgroup, strong,  b {
+    font-weight: 700
+}
+
+dfn {
+    font-style: italic
+}
+
+h1 {
+    margin: .67em 0;
+    font-size: 2em
+}
+
+mark {
+    color: #000;
+    background: #ff0
+}
+
+small {
+    font-size: 80%
+}
+
+sub, sup {
+    position: relative;
+    font-size: 75%;
+    line-height: 0;
+    vertical-align: baseline
+}
+
+sup {
+    top: -.5em
+}
+
+sub {
+    bottom: -.25em
+}
+
+img {
+    border: 0;
+    vertical-align: middle
+}
+
+figure {
+    margin: 1em 40px
+}
+
+hr {
+    height: 0;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box
+}
+
+pre, textarea {
+    overflow: auto
+}
+
+code, kbd, pre, samp {
+    font-size: 1em
+}
+
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font: inherit;
+    color: inherit
+}
+
+button {
+    overflow: visible
+}
+
+button, select {
+    text-transform: none
+}
+
+button {
+    -webkit-appearance: button;
+    cursor: pointer
+}
+
+input::-moz-focus-inner,  button::-moz-focus-inner {
+    padding: 0;
+    border: 0
+}
+
+input[type=number]::-webkit-outer-spin-button,  input[type=number]::-webkit-inner-spin-button {
+    height: auto
+}
+
+input[type=search]::-webkit-search-decoration,  input[type=search]::-webkit-search-cancel-button {
+    -webkit-appearance: none
+}
+
+td, th {
+    padding: 0
+}
+
+/*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
+@media print {
+    *, :after, :before {
+        color: #000 !important;
+        text-shadow: none !important;
+        background: 0 0 !important;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important
+    }
+
+    a, a:visited {
+        text-decoration: underline
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")"
+    }
+
+    pre,   blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid
+    }
+
+    thead {
+        display: table-header-group
+    }
+
+    img, tr {
+        page-break-inside: avoid
+    }
+
+    img {
+        max-width: 100% !important
+    }
+
+    h2, h3, p {
+        orphans: 3;
+        widows: 3
+    }
+
+    h2, h3 {
+        page-break-after: avoid
+    }
+}
+
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit
+}
+
+a {
+    background-color: transparent;
+    color: #337ab7;
+    text-decoration: none
+}
+
+a:focus, a:hover {
+    color: #23527c;
+    text-decoration: underline
+}
+
+a:focus {
+    outline: -webkit-focus-ring-color auto 5px;
+    outline-offset: -2px
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee
+}
+
+h2, h3, h4, h5, h6,    h1 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit
+}
+
+dt, label {
+    font-weight: 700
+}
+
+h2, h3,  h1 {
+    margin-top: 20px;
+    margin-bottom: 10px
+}
+
+h5, h6,  h4 {
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+
+h1 {
+    font-size: 36px
+}
+
+h2 {
+    font-size: 30px
+}
+
+h3 {
+    font-size: 24px
+}
+
+h4 {
+    font-size: 18px
+}
+
+h5 {
+    font-size: 14px
+}
+
+h6 {
+    font-size: 12px
+}
+
+small {
+    font-size: 85%
+}
+
+mark {
+    padding: .2em;
+    background-color: #fcf8e3
+}
+
+ul, ol {
+    margin-top: 0;
+    margin-bottom: 10px
+}
+
+dl {
+    margin-top: 0;
+    margin-bottom: 20px
+}
+
+dd, dt {
+    line-height: 1.42857143
+}
+
+dd {
+    margin-left: 0
+}
+
+blockquote {
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    font-size: 17.5px;
+    border-left: 5px solid #eee
+}
+
+code, kbd {
+    padding: 2px 4px;
+    font-size: 90%
+}
+
+address {
+    margin-bottom: 20px;
+    font-style: normal;
+    line-height: 1.42857143
+}
+
+code, kbd, pre, samp {
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace
+}
+
+code {
+    color: #c7254e;
+    background-color: #f9f2f4;
+    border-radius: 4px
+}
+
+kbd {
+    color: #fff;
+    background-color: #333;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .25);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .25)
+}
+
+pre {
+    padding: 9.5px;
+    font-size: 13px;
+    line-height: 1.42857143;
+    color: #333;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px
+}
+
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px
+}
+
+.col-sm-9, .col-sm-3 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px
+}
+
+fieldset, legend {
+    padding: 0;
+    border: 0
+}
+
+@media (min-width: 991px) {
+    .col-sm-9,  .col-sm-3 {
+        float: left
+    }
+
+    .col-sm-3 {
+        width: 20%
+    }
+}
+
+table {
+    border-spacing: 0;
+    background-color: transparent;
+    border-collapse: collapse;
+    width: 100%
+}
+
+caption {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: #777
+}
+
+fieldset {
+    min-width: 0;
+    margin: 0
+}
+
+legend {
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: inherit;
+    color: #333;
+    border-bottom: 1px solid #e5e5e5
+}
+
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px
+}
+
+output {
+    display: block;
+    padding-top: 7px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555
+}
+
+.form-control:-ms-input-placeholder {
+    color: #999
+}
+
+.form-control::-webkit-input-placeholder {
+    color: #999
+}
+
+.form-control::-ms-expand {
+    background-color: transparent;
+    border: 0
+}
+
+@-webkit-keyframes progress-bar-stripes {
+    from {
+        background-position: 40px 0
+    }
+    to {
+        background-position: 0 0
+    }
+}
+
+@-o-keyframes progress-bar-stripes {
+    from {
+        background-position: 40px 0
+    }
+    to {
+        background-position: 0 0
+    }
+}
+@keyframes progress-bar-stripes {
+    from {
+        background-position: 40px 0
+    }
+    to {
+        background-position: 0 0
+    }
+}
+
+.container-fluid:before, .row:after, .row:before, .container-fluid:after {
+    display: table;
+    content: " "
+}
+
+.row:after, .container-fluid:after {
+    clear: both;
+}
+
+@-ms-viewport {
+    width: device-width
+}
+
+.sidenav {
+    background-color: #283F51;
+    padding-top: 100px;
+    min-width: 237px;
+}
+
+#self-pic {
+    height: 170px;
+    display: block;
+    margin: 0 auto 50px;
+    border-radius: 50%
+}
+
+#logo #micallef, #logo #niki {
+    font-size: 36px;
+    letter-spacing: .5px;
+    padding: 0;
+    border: 0;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-family: Lato, Arial, sans-serif;
+    display: block;
+    margin: 0 0 -10px
+}
+
+#logo {
+    margin: auto;
+    width: 174px
+}
+
+#soc-media {
+    display: table;
+    table-layout: fixed;
+    width: 115px;
+    margin: 0 auto
+}
+
+#soc-media #github-link {
+    display: table-cell;
+    text-align: left
+}
+
+#soc-media #linkedin-link {
+    display: table-cell;
+    text-align: center
+}
+
+#soc-media #mail-link {
+    display: table-cell;
+    text-align: right
+}
+
+#soc-media #github-link #github-pic, #soc-media #linkedin-link #linkedin-pic, #soc-media #mail-link #mail-pic {
+    width: 25px;
+    height: 25px
+}
+
+#side-text {
+    color: #fff;
+    margin: 0 auto;
+    text-align: center;
+    width: 85%;
+    min-width: 174px;
+    font-family: Lato, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 300
+}
+
+#main-text {
+    font-family: Lato, Arial, sans-serif;
+    color: #424242;
+    padding: 50px 75px 50px 75px;
+    width:80%;
+}
+
+#line{
+    width:80%;
+    margin:auto;
+}
+
+#selector {
+    display: table;
+    table-layout: fixed;
+    width: 249px;
+    margin: 0 auto;
+    background-color: white;
+    position: relative;
+    top:-12px;
+    padding-bottom: 25px;
+}
+
+#selector #ldiv{
+    display: table-cell;
+    text-align: left;
+    padding-left:20px;
+}
+
+#selector #navLeft {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    display: table-cell;
+    text-align: right;
+    margin-left:20px;
+    color: #424242;
+}
+
+#selector #navLeft:hover {
+    color: #424242!important;
+}
+
+#selector #navCentre {
+    display: table-cell;
+    text-align: center
+}
+
+#selector #navRight {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    display: table-cell;
+    text-align: right;
+    color: #DCDCDC;
+    padding:0;
+}
+
+#selector #navRight:hover {
+    color: #424242!important;
+}
+
+td {
+    vertical-align: top
+}
+
+table tr td hr {
+    color: #DCDCDC;
+    margin: 50px 20px 0
+}
+
+table {
+    width:100%!important;
+}
+
+table tr .left {
+    width: 220px
+}
+
+table .division {
+    height: 100px
+}
+
+table .empty {
+    height: 50px
+}
+
+table tr td h3 {
+    margin: 0;
+    padding-bottom: 10px;
+    font-size: 17px
+}
+
+table tr td .title, table tr td .title1 {
+    text-transform: uppercase;
+    font-size: 19px;
+    color: #000
+}
+
+table tr td h4, table tr td h5 {
+    color: rgba(26, 26, 26, .6);
+    margin: 0
+}
+
+table tr td .notabene {
+    font-size: 11px
+}
+
+table tr td h4 {
+    font-size: 15px;
+    font-weight: 500
+}
+
+table tr td h5 {
+    font-size: 13px
+}
+
+table tr td .progcont {
+    font-size: 14px
+}
+
+table tr td .date {
+    float: right;
+    font-size: 13px;
+    vertical-align: bottom
+}
+
+table tr td ul {
+    margin: 0;
+    padding-left: 30px;
+    list-style-type: square
+}
+
+table tr td ul li {
+    color: #555
+}
+
+@media screen and (min-width: 991px) and (max-width: 1201px) {
+    #main-text {
+        width: calc(100% - 237px);
+        padding-right: 25px;
+        padding-left:25px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .row.content, .sidenav {
+        height: auto
+    }
+
+    .sidenav {
+        padding: 50px 15px 50px 15px;
+        margin-bottom: 0;
+    }
+
+    #self-pic {
+        height: 190px
+    }
+
+    #logo {
+        width: 222px
+    }
+
+    #logo #micallef, #logo #niki {
+        font-size: 46px
+    }
+
+    #soc-media {
+        width: 175px
+    }
+
+    #soc-media #github-link #github-pic, #soc-media #linkedin-link #linkedin-pic, #soc-media #mail-link #mail-pic {
+        width: 30px;
+        height: 30px
+    }
+
+    #side-text {
+        max-width: 400px
+    }
+
+    #main-text, #contact {
+        width:100%;
+        padding-left:25px;
+        padding-right:25px;
+        padding-bottom:50px;
+    }
+
+    #contact #con-form #last-box {
+        width:100%;
+    }
+}
+
+#parent{
+    overflow:hidden;
+}
+
+#contact {
+    display: none;
+    width: 100%;
+}
+
+#contact #required {
+    font-family:Lato, Arial, sans-serif;
+    font-size:13px;
+    color:red;
+    font-weight: 500;
+    display:inline-block;
+    clear:both;
+    float:left;
+}
+
+#contact #con-form label {
+    display:inline-block;
+    clear:both;
+    float:left;
+    font-family:Lato, Arial, sans-serif;
+    font-size:17px;
+    color:#424242;
+    font-weight: 500;
+}
+
+#contact #con-form input {
+    display:inline-block;
+    clear:both;
+    float:left;
+    margin-bottom:15px;
+    width:300px;
+    border:1px solid #dedede;
+    padding:5px;
+    margin-top:3px;
+    font-size:17px;
+    border-radius:5px;
+}
+
+#contact #con-form #last-box {
+    display:inline-block;
+    clear:both;
+    float:left;
+    margin-bottom:15px;
+    width:75%;
+    min-width: 300px;
+    height:250px;
+    border:1px solid #dedede;
+    padding:5px;
+    margin-top:3px;
+    border-radius:5px;
+}
