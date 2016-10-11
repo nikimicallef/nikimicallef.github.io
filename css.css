@@ -658,6 +658,10 @@ table tr td h4 {
     font-weight: 500
 }
 
+table tr .dateData {
+    width: 120px
+}
+
 table tr td h5 {
     font-size: 13px
 }
