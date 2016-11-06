@@ -465,10 +465,6 @@ output {
     clear: both;
 }
 
-@-ms-viewport {
-    width: device-width
-}
-
 .sidenav {
     background-color: #283F51;
     padding-top: 100px;
@@ -629,7 +625,7 @@ table .division {
 }
 
 table .empty {
-    height: 50px
+    height: 30px
 }
 
 table tr td h3 {
