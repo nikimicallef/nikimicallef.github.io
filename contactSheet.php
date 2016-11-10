@@ -19,7 +19,7 @@ $headers .= "X-Priority: 1" . "\r\n";
 
 if ($_POST['submit']) {
     if ($name != '' && $email != '' && $message != '') {
-        if (mail('nikmic94@gmail.com', $subject, $body, $headers)) {
+        if (mail('me@nikimicallef.com', $subject, $body, $headers)) {
             echo 'Your message has been sent. Press the back button to return to nikimicallef.com.';
         } else {
             echo 'Something went wrong. Press the back button to retry.';
