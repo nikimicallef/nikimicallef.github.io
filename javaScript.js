@@ -6,7 +6,7 @@ function contactButtonPress() {
     $("#topTable").fadeOut(500);
     $("#bottomTable").fadeOut(500,function(){
         $("#contact").fadeIn(500);
-        if($(window).width() >= 990) {
+        if($(window).width() >= 974) {
             $("#parent").css("padding-right", "17px");
         }
         sidenavHeight();
@@ -29,7 +29,7 @@ function resumeButtonPress() {
 }
 
 function sidenavHeight() {
-    if($(window).width() >= 990) {
+    if($(window).width() >= 974) {
         if($('#contact').is(":visible")){
             $("#parent").css("padding-right", "17px");
         }
