@@ -7,11 +7,11 @@ body, figure {
     margin: 0
 }
 
-p,  pre {
+p, pre {
     margin: 0 0 10px
 }
 
-article, aside, details, figcaption, figure, footer, header, legend, main, menu, nav, section, summary,  pre {
+article, aside, details, figcaption, figure, footer, header, legend, main, menu, nav, section, summary, pre {
     display: block
 }
 
@@ -45,7 +45,7 @@ a:active, a:hover {
     outline: 0
 }
 
-optgroup, strong,  b {
+optgroup, strong, b {
     font-weight: 700
 }
 
@@ -125,16 +125,16 @@ button {
     cursor: pointer
 }
 
-input::-moz-focus-inner,  button::-moz-focus-inner {
+input::-moz-focus-inner, button::-moz-focus-inner {
     padding: 0;
     border: 0
 }
 
-input[type=number]::-webkit-outer-spin-button,  input[type=number]::-webkit-inner-spin-button {
+input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner-spin-button {
     height: auto
 }
 
-input[type=search]::-webkit-search-decoration,  input[type=search]::-webkit-search-cancel-button {
+input[type=search]::-webkit-search-decoration, input[type=search]::-webkit-search-cancel-button {
     -webkit-appearance: none
 }
 
@@ -160,7 +160,7 @@ td, th {
         content: " (" attr(href) ")"
     }
 
-    pre,   blockquote {
+    pre, blockquote {
         border: 1px solid #999;
         page-break-inside: avoid
     }
@@ -222,7 +222,7 @@ hr {
     border-top: 1px solid #eee
 }
 
-h2, h3, h4, h5, h6,    h1 {
+h2, h3, h4, h5, h6, h1 {
     font-family: inherit;
     font-weight: 500;
     line-height: 1.1;
@@ -233,12 +233,12 @@ dt, label {
     font-weight: 700
 }
 
-h2, h3,  h1 {
+h2, h3, h1 {
     margin-top: 20px;
     margin-bottom: 10px
 }
 
-h5, h6,  h4 {
+h5, h6, h4 {
     margin-top: 10px;
     margin-bottom: 10px
 }
@@ -367,7 +367,7 @@ fieldset, legend {
 }
 
 @media (min-width: 991px) {
-    .col-sm-9,  .col-sm-3 {
+    .col-sm-9, .col-sm-3 {
         float: left
     }
 
@@ -447,6 +447,7 @@ output {
         background-position: 0 0
     }
 }
+
 @keyframes progress-bar-stripes {
     from {
         background-position: 40px 0
@@ -539,12 +540,12 @@ output {
     font-family: Lato, Arial, sans-serif;
     color: #424242;
     padding: 50px 75px 50px 75px;
-    width:80%;
+    width: 80%;
 }
 
-#line{
-    width:80%;
-    margin:auto;
+#line {
+    width: 80%;
+    margin: auto;
 }
 
 #selector {
@@ -554,31 +555,31 @@ output {
     margin: 0 auto;
     background-color: white;
     position: relative;
-    top:-12px;
+    top: -12px;
     padding-bottom: 25px;
 }
 
-#selector #ldiv{
+#selector #ldiv {
     display: table-cell;
     text-align: left;
-    padding-left:20px;
+    padding-left: 20px;
 }
 
 #selector #navLeft {
     background-color: Transparent;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     border: none;
-    cursor:pointer;
+    cursor: pointer;
     overflow: hidden;
-    outline:none;
+    outline: none;
     display: table-cell;
     text-align: right;
-    margin-left:20px;
+    margin-left: 20px;
     color: #424242;
 }
 
 #selector #navLeft:hover {
-    color: #424242!important;
+    color: #424242 !important;
 }
 
 #selector #navCentre {
@@ -588,19 +589,19 @@ output {
 
 #selector #navRight {
     background-color: Transparent;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     border: none;
-    cursor:pointer;
+    cursor: pointer;
     overflow: hidden;
-    outline:none;
+    outline: none;
     display: table-cell;
     text-align: right;
     color: #DCDCDC;
-    padding:0;
+    padding: 0;
 }
 
 #selector #navRight:hover {
-    color: #424242!important;
+    color: #424242 !important;
 }
 
 td {
@@ -613,7 +614,7 @@ table tr td hr {
 }
 
 table {
-    width:100%!important;
+    width: 100% !important;
 }
 
 table tr .left {
@@ -713,7 +714,7 @@ table tr td ul li {
     #main-text {
         width: calc(100% - 237px);
         padding-right: 25px;
-        padding-left:25px;
+        padding-left: 25px;
     }
 }
 
@@ -753,19 +754,19 @@ table tr td ul li {
     }
 
     #main-text, #contact {
-        width:100%;
-        padding-left:25px;
-        padding-right:25px;
-        padding-bottom:50px;
+        width: 100%;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 50px;
     }
 
     #contact #con-form #last-box {
-        width:100%;
+        width: 100%;
     }
 }
 
-#parent{
-    overflow:hidden;
+#parent {
+    overflow: hidden;
 }
 
 #contact {
@@ -774,48 +775,48 @@ table tr td ul li {
 }
 
 #contact #required {
-    font-family:Lato, Arial, sans-serif;
-    font-size:13px;
-    color:red;
+    font-family: Lato, Arial, sans-serif;
+    font-size: 13px;
+    color: red;
     font-weight: 500;
-    display:inline-block;
-    clear:both;
-    float:left;
+    display: inline-block;
+    clear: both;
+    float: left;
 }
 
 #contact #con-form label {
-    display:inline-block;
-    clear:both;
-    float:left;
-    font-family:Lato, Arial, sans-serif;
-    font-size:17px;
-    color:#424242;
+    display: inline-block;
+    clear: both;
+    float: left;
+    font-family: Lato, Arial, sans-serif;
+    font-size: 17px;
+    color: #424242;
     font-weight: 500;
 }
 
 #contact #con-form input {
-    display:inline-block;
-    clear:both;
-    float:left;
-    margin-bottom:15px;
-    width:300px;
-    border:1px solid #dedede;
-    padding:5px;
-    margin-top:3px;
-    font-size:17px;
-    border-radius:5px;
+    display: inline-block;
+    clear: both;
+    float: left;
+    margin-bottom: 15px;
+    width: 300px;
+    border: 1px solid #dedede;
+    padding: 5px;
+    margin-top: 3px;
+    font-size: 17px;
+    border-radius: 5px;
 }
 
 #contact #con-form #last-box {
-    display:inline-block;
-    clear:both;
-    float:left;
-    margin-bottom:15px;
-    width:75%;
+    display: inline-block;
+    clear: both;
+    float: left;
+    margin-bottom: 15px;
+    width: 75%;
     min-width: 300px;
-    height:250px;
-    border:1px solid #dedede;
-    padding:5px;
-    margin-top:3px;
-    border-radius:5px;
+    height: 250px;
+    border: 1px solid #dedede;
+    padding: 5px;
+    margin-top: 3px;
+    border-radius: 5px;
 }
