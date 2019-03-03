@@ -501,16 +501,16 @@ output {
 #soc-media {
     display: table;
     table-layout: fixed;
-    width: 140px;
+    width: 160px;
     margin: 0 auto
 }
 
-#soc-media #github-link, #soc-media #linkedin-link, #soc-media #skype-link, #soc-media #mail-link {
+#soc-media #github-link, #soc-media #linkedin-link, #soc-media #skype-link, #soc-media #mail-link, #soc-media #download-link {
     display: table-cell;
     text-align: center
 }
 
-#soc-media #github-link #github-pic, #soc-media #linkedin-link #linkedin-pic, #soc-media #mail-link #mail-pic, #soc-media #skype-link #skype-pic {
+#soc-media #github-link #github-pic, #soc-media #linkedin-link #linkedin-pic, #soc-media #mail-link #mail-pic, #soc-media #skype-link #skype-pic, #soc-media #download-link #download-pic {
     width: 25px;
     height: 25px
 }
@@ -673,7 +673,7 @@ table tr td ul li {
         width: 175px
     }
 
-    #soc-media #github-link #github-pic, #soc-media #linkedin-link #linkedin-pic, #soc-media #mail-link #mail-pic, #soc-media #skype-link #skype-pic {
+    #soc-media #github-link #github-pic, #soc-media #linkedin-link #linkedin-pic, #soc-media #mail-link #mail-pic, #soc-media #skype-link #skype-pic, #soc-media #download-link #download-pic {
         width: 30px;
         height: 30px
     }
