@@ -501,26 +501,16 @@ output {
 #soc-media {
     display: table;
     table-layout: fixed;
-    width: 115px;
+    width: 140px;
     margin: 0 auto
 }
 
-#soc-media #github-link {
-    display: table-cell;
-    text-align: left
-}
-
-#soc-media #linkedin-link {
+#soc-media #github-link, #soc-media #linkedin-link, #soc-media #skype-link, #soc-media #mail-link {
     display: table-cell;
     text-align: center
 }
 
-#soc-media #mail-link {
-    display: table-cell;
-    text-align: right
-}
-
-#soc-media #github-link #github-pic, #soc-media #linkedin-link #linkedin-pic, #soc-media #mail-link #mail-pic {
+#soc-media #github-link #github-pic, #soc-media #linkedin-link #linkedin-pic, #soc-media #mail-link #mail-pic, #soc-media #skype-link #skype-pic {
     width: 25px;
     height: 25px
 }
@@ -539,69 +529,13 @@ output {
 #main-text {
     font-family: Lato, Arial, sans-serif;
     color: #424242;
-    padding: 50px 75px 50px 75px;
+    padding: 50px;
     width: 80%;
 }
 
 #line {
     width: 80%;
     margin: auto;
-}
-
-#selector {
-    display: table;
-    table-layout: fixed;
-    width: 249px;
-    margin: 0 auto;
-    background-color: white;
-    position: relative;
-    top: -12px;
-    padding-bottom: 25px;
-}
-
-#selector #ldiv {
-    display: table-cell;
-    text-align: left;
-    padding-left: 20px;
-}
-
-#selector #navLeft {
-    background-color: Transparent;
-    background-repeat: no-repeat;
-    border: none;
-    cursor: pointer;
-    overflow: hidden;
-    outline: none;
-    display: table-cell;
-    text-align: right;
-    margin-left: 20px;
-    color: #424242;
-}
-
-#selector #navLeft:hover {
-    color: #424242 !important;
-}
-
-#selector #navCentre {
-    display: table-cell;
-    text-align: center
-}
-
-#selector #navRight {
-    background-color: Transparent;
-    background-repeat: no-repeat;
-    border: none;
-    cursor: pointer;
-    overflow: hidden;
-    outline: none;
-    display: table-cell;
-    text-align: right;
-    color: #DCDCDC;
-    padding: 0;
-}
-
-#selector #navRight:hover {
-    color: #424242 !important;
 }
 
 td {
@@ -673,7 +607,7 @@ table tr td h4 {
 }
 
 table tr .dateData {
-    width: 120px
+    width: 140px
 }
 
 table tr td h5 {
@@ -703,11 +637,6 @@ table tr td ul li {
 #mcdCert {
     width: 197px;
     float: right;
-}
-
-#linkImg {
-    width: 12px;
-    padding-bottom: 3px;
 }
 
 @media screen and (min-width: 991px) and (max-width: 1201px) {
@@ -744,7 +673,7 @@ table tr td ul li {
         width: 175px
     }
 
-    #soc-media #github-link #github-pic, #soc-media #linkedin-link #linkedin-pic, #soc-media #mail-link #mail-pic {
+    #soc-media #github-link #github-pic, #soc-media #linkedin-link #linkedin-pic, #soc-media #mail-link #mail-pic, #soc-media #skype-link #skype-pic {
         width: 30px;
         height: 30px
     }
@@ -753,70 +682,14 @@ table tr td ul li {
         max-width: 400px
     }
 
-    #main-text, #contact {
+    #main-text {
         width: 100%;
         padding-left: 25px;
         padding-right: 25px;
         padding-bottom: 50px;
     }
-
-    #contact #con-form #last-box {
-        width: 100%;
-    }
 }
 
 #parent {
     overflow: hidden;
-}
-
-#contact {
-    display: none;
-    width: 100%;
-}
-
-#contact #required {
-    font-family: Lato, Arial, sans-serif;
-    font-size: 13px;
-    color: red;
-    font-weight: 500;
-    display: inline-block;
-    clear: both;
-    float: left;
-}
-
-#contact #con-form label {
-    display: inline-block;
-    clear: both;
-    float: left;
-    font-family: Lato, Arial, sans-serif;
-    font-size: 17px;
-    color: #424242;
-    font-weight: 500;
-}
-
-#contact #con-form input {
-    display: inline-block;
-    clear: both;
-    float: left;
-    margin-bottom: 15px;
-    width: 300px;
-    border: 1px solid #dedede;
-    padding: 5px;
-    margin-top: 3px;
-    font-size: 17px;
-    border-radius: 5px;
-}
-
-#contact #con-form #last-box {
-    display: inline-block;
-    clear: both;
-    float: left;
-    margin-bottom: 15px;
-    width: 75%;
-    min-width: 300px;
-    height: 250px;
-    border: 1px solid #dedede;
-    padding: 5px;
-    margin-top: 3px;
-    border-radius: 5px;
 }
